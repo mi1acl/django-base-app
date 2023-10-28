@@ -4,7 +4,12 @@ services:
   web:
     build: .
     command: python /opt/code/manage.py runserver 0.0.0.0:8000
+    container_name: daily-word-app
     volumes:
       - .:/opt/code
     ports:
       - 8000:8000
+  db:
+    image: postgres:12
+    environment:
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
