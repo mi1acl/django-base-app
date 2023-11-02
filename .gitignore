@@ -203,3 +203,5 @@ Temporary Items
 
 # VS Code
 .vscode
+
+.env.dev
