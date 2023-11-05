@@ -162,3 +162,4 @@ AUTHENTICATION_BACKENDS = (
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_LOGOUT_REDIRECT = 'home'
+ACCOUNT_SESSION_REMEMBER = True
