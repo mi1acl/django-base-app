@@ -169,6 +169,15 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Configure these parameters with info from your email service provider
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST =
+# EMAIL_HOST_USER =
+# EMAIL_HOST_PASSWORD =
+# EMAIL_PORT =
+
+DEFAULT_FROM_EMAIL = 'admin@sampledomain.com'
 ACCOUNT_LOGOUT_REDIRECT = 'home'
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False

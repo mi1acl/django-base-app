@@ -1,0 +1,13 @@
+{%load account%}
+{%user_display user as user_display%}
+{% load i18n %}
+{% autoescape off %}
+    {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+Hi from {{site_name}}
+
+Please complete signing up for {{site_name}} by confirming your email. To confirm visit {{activate_url}}email.
+
+Thank you from {{site_name}} !
+{{site_domain}}
+    {% endblocktrans %}
+{% endautoescape %}
