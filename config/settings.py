@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     # Third party
+    'crispy_forms',
+    'crispy_bootstrap5',
     'allauth',
     'allauth.account',
 
@@ -146,6 +148,10 @@ STATICFILES_FINDERS = ["django.contrib.staticfiles.finders.FileSystemFinder",
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Crispy forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 # Authentication settings (without django-allauth)
 AUTH_USER_MODEL = 'accounts.CustomUser'
